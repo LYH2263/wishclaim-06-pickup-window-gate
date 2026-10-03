@@ -7,6 +7,9 @@
         <h3>{{ w.title || '（无标题）' }}</h3>
         <p>{{ w.note }}</p>
         <span class="tag">{{ w.status }} · {{ w.data_quality }}</span>
+        <span v-if="w.window_label" class="tag win" :class="{ closed: !w.window_open }">
+          {{ w.window_open ? '窗内可取' : '窗外·可认领，核销等窗内' }} · {{ w.window_label }}
+        </span>
       </article>
     </div>
   </div>

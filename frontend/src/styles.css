@@ -35,3 +35,9 @@ button.ghost { background: transparent; color: var(--ink); border: 1px solid var
 input, textarea { width: 100%; padding: 10px; border-radius: 12px; border: 1px solid var(--line); font: inherit; margin: 6px 0 12px; background: #fff; }
 .menu-btn { position: fixed; left: 16px; top: 16px; z-index: 10; }
 .err { color: #a33; }
+.days { display: flex; flex-wrap: wrap; gap: 10px; margin: 6px 0 12px; }
+.days label, .check { display: flex; align-items: center; gap: 4px; font-size: 13px; color: var(--muted); }
+.check { margin: 6px 0 12px; }
+.days input, .check input { width: auto; margin: 0; }
+.win { display: inline-block; margin-left: 6px; }
+.win.closed { color: #a33; }
